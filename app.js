@@ -15,7 +15,7 @@ var app = express();
 const ongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI)
 
-mongoose.connection.once('open'. ()=>{
+mongoose.connection.once('open', ()=>{
   console.log('Conncected to mongoDB')
 })
 
