@@ -12,7 +12,7 @@ var users = require('./routes/users');
 
 var app = express();
 
-const ongoose = require('mongoose');
+const mongoose = require('mongoose');
 mongoose.connect(process.env.MONGODB_URI)
 
 mongoose.connection.once('open', () => {
